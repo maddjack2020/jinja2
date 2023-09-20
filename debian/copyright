@@ -1,0 +1,195 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: jinja2
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     CHANGES.rst
+           MANIFEST.in
+           PKG-INFO
+           README.rst
+           docs/Makefile
+           docs/_static/jinja-logo-sidebar.png
+           docs/_static/jinja-logo.png
+           docs/api.rst
+           docs/changes.rst
+           docs/conf.py
+           docs/examples/cache_extension.py
+           docs/examples/inline_gettext_extension.py
+           docs/faq.rst
+           docs/index.rst
+           docs/integration.rst
+           docs/intro.rst
+           docs/license.rst
+           docs/make.bat
+           docs/nativetypes.rst
+           docs/sandbox.rst
+           docs/switching.rst
+           docs/templates.rst
+           docs/tricks.rst
+           examples/basic/cycle.py
+           examples/basic/debugger.py
+           examples/basic/inheritance.py
+           examples/basic/templates/broken.html
+           examples/basic/templates/subbroken.html
+           examples/basic/test.py
+           examples/basic/test_filter_and_linestatements.py
+           examples/basic/test_loop_filter.py
+           examples/basic/translate.py
+           requirements/dev.txt
+           requirements/docs.txt
+           requirements/tests.txt
+           requirements/typing.txt
+           setup.cfg
+           setup.py
+           src/Jinja2.egg-info/PKG-INFO
+           src/Jinja2.egg-info/SOURCES.txt
+           src/Jinja2.egg-info/dependency_links.txt
+           src/Jinja2.egg-info/entry_points.txt
+           src/Jinja2.egg-info/requires.txt
+           src/Jinja2.egg-info/top_level.txt
+           src/jinja2/__init__.py
+           src/jinja2/_identifier.py
+           src/jinja2/async_utils.py
+           src/jinja2/bccache.py
+           src/jinja2/compiler.py
+           src/jinja2/constants.py
+           src/jinja2/debug.py
+           src/jinja2/defaults.py
+           src/jinja2/environment.py
+           src/jinja2/exceptions.py
+           src/jinja2/ext.py
+           src/jinja2/filters.py
+           src/jinja2/idtracking.py
+           src/jinja2/lexer.py
+           src/jinja2/loaders.py
+           src/jinja2/meta.py
+           src/jinja2/nativetypes.py
+           src/jinja2/nodes.py
+           src/jinja2/optimizer.py
+           src/jinja2/parser.py
+           src/jinja2/py.typed
+           src/jinja2/runtime.py
+           src/jinja2/sandbox.py
+           src/jinja2/tests.py
+           src/jinja2/utils.py
+           src/jinja2/visitor.py
+           tests/conftest.py
+           tests/res/__init__.py
+           tests/res/package.zip
+           tests/res/templates/broken.html
+           tests/res/templates/foo/test.html
+           tests/res/templates/mojibake.txt
+           tests/res/templates/syntaxerror.html
+           tests/res/templates/test.html
+           tests/res/templates2/foo
+           tests/test_api.py
+           tests/test_async.py
+           tests/test_async_filters.py
+           tests/test_bytecode_cache.py
+           tests/test_compile.py
+           tests/test_core_tags.py
+           tests/test_debug.py
+           tests/test_ext.py
+           tests/test_filters.py
+           tests/test_idtracking.py
+           tests/test_imports.py
+           tests/test_inheritance.py
+           tests/test_lexnparse.py
+           tests/test_loader.py
+           tests/test_nativetypes.py
+           tests/test_nodes.py
+           tests/test_pickle.py
+           tests/test_regression.py
+           tests/test_runtime.py
+           tests/test_security.py
+           tests/test_tests.py
+           tests/test_utils.py
+           tox.ini
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     docs/extensions.rst
+Copyright: __NO_COPYRIGHT__ in: docs/extensions.rst
+License:   __UNKNOWN__
+ -   String formatting is used even if no placeholders are used, which
+ makes all strings use a consistent format. Remember to escape any
+ raw percent signs as ``%%``, such as ``100%%``.
+ -   The translated string is marked safe, formatting performs escaping
+ as needed. Mark a parameter as ``|safe`` if it has already been
+ escaped.
+ .
+ Expression Statement
+
+Files:     LICENSE.rst
+Copyright: 2007 Pallets
+License:   BSD-3-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:
+ .
+ 1.  Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ .
+ 2.  Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ .
+ 3.  Neither the name of the copyright holder nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+#----------------------------------------------------------------------------
+# xml and html files (skipped):
+#         artwork/jinjalogo.svg
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: LICENSE.rst
+ Copyright 2007 Pallets
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:
+ .
+ 1.  Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+ .
+ 2.  Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+ .
+ 3.  Neither the name of the copyright holder nor the names of its
+     contributors may be used to endorse or promote products derived from
+     this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
